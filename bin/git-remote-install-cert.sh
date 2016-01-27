@@ -115,5 +115,5 @@ mv $certtmp $cert ||
     err "Failed to import certificate"
 
 echo "Certificate installed to: $cert"
-git config --global http.sslCAPath "$HOME/.gitcerts" ||
+git config http.sslCAPath "$HOME/.gitcerts" ||
     err "Failed to set 'http.sslCAPath' configuration setting"
